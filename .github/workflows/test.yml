@@ -36,5 +36,5 @@ jobs:
           node-version: 18
           cache: 'yarn'
 
-      - run: npx @puppeteer/browsers install chrome@131.0.6778.85 --path ${{ github.workspace }}/browser
+      - run: npx @puppeteer/browsers install chrome@117.0.5938.149 --path ${{ github.workspace }}/browser
       - run: ls -lR browser
