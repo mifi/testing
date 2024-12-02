@@ -37,3 +37,4 @@ jobs:
           cache: 'yarn'
 
       - run: yarn install --immutable
+      - run: node index.js
