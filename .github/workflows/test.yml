@@ -22,7 +22,7 @@ jobs:
     env:
       # https://github.com/actions/setup-node/issues/531
       SKIP_YARN_COREPACK_CHECK: true
-    
+
     steps:
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
