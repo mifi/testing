@@ -18,6 +18,9 @@ jobs:
         os: [macos-13]
 
     runs-on: ${{ matrix.os }}
+    env:
+      # https://github.com/actions/setup-node/issues/531
+      SKIP_YARN_COREPACK_CHECK: true
 
     steps:
       # Windows fix. See https://github.com/actions/checkout/issues/226
