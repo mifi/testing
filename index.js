@@ -1,9 +1,9 @@
 import { execa } from 'execa';
 
-const process = execa('dir');
-process.kill();
-try {
-  await process();
-} catch (err) {
+const process = execa('ffmpeg');
+process.catch((err) => {
   console.log('process failed', err);
-}
+})
+// setTimeout(() => {
+process.kill();
+// }, 0)
